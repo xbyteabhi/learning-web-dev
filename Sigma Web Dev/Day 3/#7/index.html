@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h1>Form to apply for Application </h1>
+    <form action="post">
+        <div>
+            <label for="name">Name*:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required autofocus>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter E-mail">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">subscribe to the Newsletter</label>
+        </div>
+        <div>
+            <label for="color">choose your Fav Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="date">Choose DATE:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="cherry">Cherry</option>
+                <option value="apple">Apple</option>
+                <option value="papaya">Papaya</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your query here....."></textarea>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
