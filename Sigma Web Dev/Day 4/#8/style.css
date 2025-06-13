@@ -1,0 +1,20 @@
+body {
+    margin: 10;
+    padding: 0;
+}
+
+p {
+    background-color: aquamarine;
+}
+
+a {
+    background-color: rgb(214, 137, 137);
+}
+
+span {
+    background-color: rgb(176, 194, 10);
+}
+
+div {
+    background-color: blueviolet;
+}
