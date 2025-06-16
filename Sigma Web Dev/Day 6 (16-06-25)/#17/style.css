@@ -1,0 +1,36 @@
+/* element selector  */
+        div{
+            background-color: rgb(0, 102, 255);
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #para{
+            background-color: aqua;
+        }
+
+        /* child Selector  */
+        div>p{
+            background-color: rgb(117, 141, 93);
+        }
+        div> .link{
+            background-color: brown;
+        }
+
+        /* descendent Selector  */
+        div a {
+            font-style:italic;
+        }
+
+        /* pseudo Selector  */
+        a:visited{
+            color: rgb(53, 193, 25);
+        }
+        a:active{color: rgb(88, 65, 57);}
+        a:hover{color: aqua;}
+        p:first-child{
+            color: crimson;
+        }
+            
