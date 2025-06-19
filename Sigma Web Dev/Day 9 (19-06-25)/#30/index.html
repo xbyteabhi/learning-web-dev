@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            /* root variable can store values like number, color, sizing units and They can also hold gradients */
+            --color1:aqua;
+            --color2:rgb(35, 154, 115);
+        }
+        .nav{
+            background-color: var(--color1, lightblue);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul li{
+            padding: 20px;
+            border: 2px solid var(--color2);
+        }
+        ul li:first-child{
+
+        }
+        .container{
+            background-color: var(--color2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam tenetur molestias aut sed consequatur inventore ab suscipit odit asperiores saepe quis reprehenderit ea soluta, rem atque? Aperiam fugit, sapiente ullam repellat delectus eos laudantium quaerat, magnam quod, officia eveniet molestias voluptas tenetur reiciendis impedit provident.
+    </div>
+</body>
+</html>
