@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        /* @media not|only mediatype and (media feature) and (media feature) {CSS-Code;} */
+
+        /* CSS Media Types
+
+         all : Used for all media type devices
+         print : Used for print preview mode
+         screen : Used for computer screens, tablets, smart-phones etc.
+         speech devices: */
+
+        /* CSS Common Media Features
+
+         orientation : Orientation of the viewport. Landscape or portrait
+         max-height : Maximum height of the viewport
+         min-height : Minimum height of the viewport
+         height : Height of the viewport (including scrollbar)
+         max-width : Maximum width of the viewport
+         min-width : Minimum width of the viewport
+         width : Width of the viewport (including scrollbar) */
+
+         body{
+            display: flex;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: #1793c9;
+            margin: 5px;
+            padding: 5px;
+            
+        }
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: red;
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            body{
+                background-color: blue;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+</html>
