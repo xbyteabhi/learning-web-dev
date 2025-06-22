@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        *{
+            font-size: 16px;
+        }
+        .boxes{
+            /* applies properties to the main element */
+            /* border: 3px dotted ; */
+        }
+        .boxes *{
+            /* applies properties to every element of the of the main element individually */
+            /* border: 2px solid black; */
+        }
+        .box:first-child{
+            background-color: aqua;
+        }
+        .box:nth-child(2){
+            background-color: rgb(67, 210, 163);
+        }
+        .box:nth-child(2)::first-line{
+            background-color: rgb(86, 67, 104);
+
+        }
+        /* .box:nth-child() */
+        
+        p, a, div,[data-name="rem"]{
+            /* margin-top: 20px; */
+            /* padding-top: 25px; */
+        }
+        .box:nth-child(odd){
+            font-size:20px;
+        }
+        .boxes::before{
+            content: "I'm a good boy";
+        }
+        .boxes::after{
+            content: "I'm a good boy";
+            background-color: rgb(196, 60, 60);
+        }
+        ::selection{
+            /* applies on the whole body*/
+            background-color: rgb(112, 170, 199);
+            color: #b91414;
+        }
+
+        .boxes::selection{
+            /* applies for specific element as per the value given */
+            background-color: rgb(42, 56, 165);
+        }
+        .box::first-letter{
+            background-color: peru;
+            text-transform: lowercase;
+            font-size: 2em;
+        }
+        input::placeholder{
+            font-size: 25px;
+            background-color: rgb(148, 170, 127);
+            color: rgb(53, 9, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" >Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis exercitationem. Excepturi, nulla labore, laboriosam ea fugiat vero praesentium in ad harum nemo earum exercitationem laudantium similique culpa iusto. Est molestias tempore, odit, deserunt expedita sapiente perferendis dignissimos ratione debitis ea pariatur sit, reprehenderit obcaecati explicabo voluptate. Beatae, omnis cumque?.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio exercitationem at necessitatibus minima sit tempora nulla laboriosam harum, pariatur, saepe commodi excepturi? Adipisci recusandae consequuntur a sunt quam excepturi quod illum veritatis ut velit voluptatibus minima natus tempore dolores assumenda, possimus voluptatem hic aperiam? Voluptates nostrum libero obcaecati rerum?
+        </p>
+    </div>
+    <input type="text" placeholder="Input your text">
+</body>
+</html>
