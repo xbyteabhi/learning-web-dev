@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:rgb(120, 120, 205);
+            --color2:rgb(71, 141, 164);
+            --color3:rgb(53, 208, 33);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: var(--color2);
+        }
+        nav ul{
+            list-style: none;
+            background-color: var(--color1);
+            display: flex;
+            /* margin: 25px 15px; */
+            /* padding: 20px; */
+        }
+        nav ul li{
+            margin: 5px;
+            padding: 0px 15px;
+        }
+        .container{
+            display: inline;
+        }
+        .box{
+            display: inline-block;
+            height: 150px;
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+            background-color: var(--color3);
+        }
+        .box:first-child{
+            background-color:var(--color3);
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--color3);
+        }
+    </style>
+</head>
+<body>
+ <!-- Create a multicolor website which can change color using CSS Variables -->
+  <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a href="/">Support</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
