@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 250px;
+            width: 300px;
+            padding: 1px;
+            background-color: rgb(60, 231, 128);
+        }
+
+        .box {
+            height: 20px;
+            width: 25px;
+            margin: 15px;
+            background-color: blue;
+            animation-name: abhikaanimation, abhi;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            /* animation-delay: 2s; */
+            /* animation-direction:reverse; */
+            /* animation-play-state:running; */
+
+            animation-fill-mode: backwards;
+            /* animation: abhikaanimation  2s  ; */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes abhikaanimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                /* transform: translateX(300px); */
+                background-color: aqua;
+            }
+        }
+
+        @keyframes abhi {
+            0% {
+                transform: rotate(0deg);
+            }
+            20% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(150deg);
+            }
+            80% {
+                transform: rotate(280deg);
+
+            }
+            100% {
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+
+</html>
